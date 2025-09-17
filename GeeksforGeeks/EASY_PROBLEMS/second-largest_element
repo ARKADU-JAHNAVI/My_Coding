@@ -1,0 +1,15 @@
+class Solution:
+    def getSecondLargest(self, arr):
+        # Codeere
+        second = -1
+        large = -1
+        n = len(arr)
+        for i in range(n):
+            if arr[i] > large:
+                second = large
+                large = arr[i]
+            if arr[i] > second and arr[i] != large:
+                second = arr[i]
+    
+        return second
+        
