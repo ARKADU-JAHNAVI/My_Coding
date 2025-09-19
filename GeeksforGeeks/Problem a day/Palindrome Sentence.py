@@ -8,5 +8,3 @@ class Solution:
         if s != s[::-1]:
             return False
         return True
-
-        

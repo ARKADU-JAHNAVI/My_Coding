@@ -1,0 +1,18 @@
+def matrix(mat ,x):
+    n = len(mat)
+    m = len(mat[0])
+    for i in range(n):
+        for j in range(m):
+            if mat[i][j] == x:
+                return True
+    return False
+if __name__ == "__main__":
+    mat = [
+        [1, 5, 9, 11],
+        [14, 20, 21, 26],
+        [30, 34, 43, 50]
+    ]
+    if matrix(mat, 14):
+        print("Found")
+    else:
+        print("Not Found")
